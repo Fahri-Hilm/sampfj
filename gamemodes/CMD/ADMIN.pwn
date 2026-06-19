@@ -4437,7 +4437,7 @@ CMD:moderatorhelp(playerid, params[])
 		strcat(string, "{87CEFA}[ATM]: {ffffff}/createatm, /editatm, /removeatm, /gotoatm\n");
 		strcat(string, "{87CEFA}[BUSINESS]: {ffffff}/createbiz, /editbiz, /gotobiz\n");
 		strcat(string, "{87CEFA}[DOOR]: {ffffff}/createdoor, /editdoor, /gotodoor\n");
-		strcat(string, "{87CEFA}[GARKOT]: {ffffff}/createpark, /setparkpos, /removepark, /gotopark\n");
+		strcat(string, "{87CEFA}[GARASI UMUM]: {ffffff}/createpark, /setparkpos, /removepark, /gotopark\n");
 		strcat(string, "{87CEFA}[GAS STATION]: {ffffff}/creategs, /editgs, /gotogs\n");
 		strcat(string, "{87CEFA}[GATE]: {ffffff}/creategate, /gedit, /gotogate\n");
 		strcat(string, "{87CEFA}[HOUSE]: {ffffff}/createhouse, /edithouse, /gotohouse\n");

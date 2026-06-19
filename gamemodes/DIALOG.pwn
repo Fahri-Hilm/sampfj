@@ -17383,6 +17383,82 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 		}
 		return 1;
 	}*/
+	if(dialogid == DIALOG_GARKOT)
+	{
+	    new carid, parkid = pData[playerid][pPark];
+	    if(response)
+	    {
+			if(listitem == 0) // Simpan Kendaraan
+			{
+			    if(GetPlayerState(playerid) != PLAYER_STATE_DRIVER)
+			        return Error(playerid, "Kamu harus menjadi pengemudi kendaraanmu.");
+
+				if((carid = Vehicle_Inside(playerid)) != -1)
+				{
+					if(Vehicle_IsOwner(playerid, carid))
+					{
+					    Vehicle_GetStatus(carid);
+						pvData[carid][cParkPoint] = parkid;
+						if(IsValidVehicle(pvData[carid][cVeh]))
+							DestroyVehicle(pvData[carid][cVeh]);
+						pvData[carid][cVeh] = 0;
+						SendServerMessage(playerid, "Kendaraanmu berhasil disimpan di garasi umum.");
+						Trunk_Save(carid);
+					}
+					else return Error(playerid, "Ini bukan kendaraanmu.");
+				}
+				else return Error(playerid, "Kamu harus berada di dalam kendaraanmu.");
+			}
+			if(listitem == 1) // Ambil Kendaraan
+			{
+				ShowParkedVehicle(playerid, parkid);
+			}
+		}
+	}
+	if(dialogid == DIALOG_PARKTAKE)
+	{
+		new parkid = pData[playerid][pPark];
+		if(response)
+		{
+			new count;
+			foreach(new i : PVehicles)
+			{
+				if(pvData[i][cParkPoint] == parkid && pvData[i][cOwner] == pData[playerid][pID])
+				{
+					if(count++ == listitem)
+					{
+						new Float:x, Float:y, Float:z;
+						GetPlayerPos(playerid, x, y, z);
+						pvData[i][cVeh] = CreateVehicle(pvData[i][cModel], x, y, z, pvData[i][cPosA], pvData[i][cColor1], pvData[i][cColor2], 60000);
+						SetVehicleNumberPlate(pvData[i][cVeh], pvData[i][cPlate]);
+						SetVehicleVirtualWorld(pvData[i][cVeh], pvData[i][cVw]);
+						LinkVehicleToInterior(pvData[i][cVeh], pvData[i][cInt]);
+						if(pvData[i][cHealth] < 350.0)  SetVehicleHealth(pvData[i][cVeh], 350.0);
+						else                            SetVehicleHealth(pvData[i][cVeh], pvData[i][cHealth]);
+						UpdateVehicleDamageStatus(pvData[i][cVeh], pvData[i][cDamage0], pvData[i][cDamage1], pvData[i][cDamage2], pvData[i][cDamage3]);
+						if(pvData[i][cVeh] != INVALID_VEHICLE_ID)
+						{
+							if(pvData[i][cPaintJob] != -1)
+								ChangeVehiclePaintjob(pvData[i][cVeh], pvData[i][cPaintJob]);
+							for(new sz = 0; sz < 17; sz++)
+								if(pvData[i][cMod][sz])
+									AddVehicleComponent(pvData[i][cVeh], pvData[i][cMod][sz]);
+							if(pvData[i][cLocked] == 1) SwitchVehicleDoors(pvData[i][cVeh], true);
+							else                        SwitchVehicleDoors(pvData[i][cVeh], false);
+						}
+						pvData[i][cParkPoint] = -1;
+						pvData[i][cBreaken]  = INVALID_PLAYER_ID;
+						pvData[i][cBreaking] = 0;
+						PutPlayerInVehicle(playerid, pvData[i][cVeh], 0);
+						SetTimer("OnLoadVehicleStorage", 1000, false);
+						MySQL_LoadVehicleStorage(i);
+						SendServerMessage(playerid, "Kamu berhasil mengambil kendaraanmu dari garasi umum.");
+						break;
+					}
+				}
+			}
+		}
+	}
 	if(dialogid == DIALOG_GARAGE)
 	{
 	    new carid, garid = pData[playerid][pGarage];

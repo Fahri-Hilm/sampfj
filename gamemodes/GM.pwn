@@ -317,6 +317,7 @@ enum
 	DIALOG_RENT_BIKE,
 	DIALOG_RENT_BIKECONFIRM,
 	DIALOG_GARKOT,
+	DIALOG_PARKTAKE,
 	DIALOG_MY_VEHICLE,
 	DIALOG_RENT_VEHICLE,
 	DIALOG_RENT_VEHICLECONFIRM,
@@ -1404,10 +1405,10 @@ main() {}
 #include "UCP.pwn"
 #include "TEXTDRAW.pwn"
 #include "ANIMS.pwn"
-//#include "GARKOT.pwn"
 #include "RENTAL.pwn"
 #include "PRIVATE_VEHICLE.pwn"
 #include "GARAGE.pwn"
+#include "GARKOT.pwn"
 #include "BORAX.pwn"
 #include "PELURU.pwn"
 #include "VSTORAGE.pwn"
@@ -1547,7 +1548,7 @@ public OnGameModeInit()
 	mysql_tquery(g_SQL, "SELECT * FROM `ores`", "LoadOres", "");
 	mysql_tquery(g_SQL, "SELECT * FROM `plants`", "LoadPlants", "");
 	mysql_tquery(g_SQL, "SELECT * FROM `workshop`", "LoadWorkshop", "");
-	//mysql_tquery(g_SQL, "SELECT * FROM `parks`", "LoadPark", "");
+	mysql_tquery(g_SQL, "SELECT * FROM `parks`", "LoadPark", "");
 	mysql_tquery(g_SQL, "SELECT * FROM `garage`", "Garage_Load", "");
 	mysql_tquery(g_SQL, "SELECT * FROM `storage`", "LoadStorage" "");
 	mysql_tquery(g_SQL, "SELECT * FROM `speedcam`", "Speed_Load", "");
@@ -5145,6 +5146,12 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys){
 		if(Garage_Nearest(playerid) >= 0)
 		{
 			cmd_garasi(playerid, "");
+		}
+		else if(GetClosestParks(playerid) != -1)
+		{
+			new parkid = GetClosestParks(playerid);
+			pData[playerid][pPark] = parkid;
+			ShowPlayerDialog(playerid, DIALOG_GARKOT, DIALOG_STYLE_LIST, "Garasi Umum", "Simpan Kendaraan\nAmbil Kendaraan", "Pilih", "Batal");
 		}
 	}
 	/*if((newkeys & KEY_FIRE))

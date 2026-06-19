@@ -71,10 +71,29 @@ Pawn mengalokasikan array lokal di stack tiap fungsi dipanggil. Buffer raksasa u
 | # | Item | Detail | Prio |
 |:--|:-----|:-------|:----:|
 | 4.1 | **File orphan** (tidak di-include di mana pun) | `JAIL`, `MODSHOP`, `ROBBERY`, `VTOYS`, `JOB/JOB_KURIR`, `JOB/JOB_REFLENISH`, `JOB/SINGKONG` | 🟡 |
-| 4.2 | **Modul di-disable** (include dikomentari) | `GARKOT`, `INVENTORY`, `DISCORD/REGISTERDISCORD`, `CMD/DISCORD` | 🟡 |
+| 4.2 | **Modul di-disable** (include dikomentari) | ~~`GARKOT`~~ ✅ diaktifkan (garasi umum), `INVENTORY`, `DISCORD/REGISTERDISCORD`, `CMD/DISCORD` | 🟡 |
 | 4.3 | **TEXTDRAW manual** | 96 deklarasi `new PlayerText:/Text:` berurutan (`BankTD0..23`) — kandidat jadi array | 🟢 |
 | 4.4 | **MAPPING.pwn 50.612 baris** | data objek murni — bisa dipindah ke loader `.txt`/streamer agar compile cepat | 🟢 |
 | 4.5 | **DIALOG.pwn 17.777 baris** | satu `OnDialogResponse` raksasa — kandidat pecah per-fitur (easyDialog) | 🟢 |
+
+---
+
+---
+
+## 4b. 🆕 Fitur: Garasi Umum (GARKOT) — AKTIF
+
+Modul `GARKOT.pwn` (sebelumnya nonaktif) kini diaktifkan & difungsikan penuh sebagai **garasi umum / parkir kota**.
+
+| Komponen | Detail |
+|:---------|:-------|
+| Konsep | Titik parkir publik. Pemain tekan **[Y]** di titik untuk Simpan/Ambil kendaraan pribadinya. Terpisah dari garasi pribadi (`GARAGE.pwn`). |
+| Penanda | `pvData[veh][cParkPoint]` (field baru) — `-1` = tidak di-park. Tidak bentrok dengan `cGaraged` (garasi pribadi). |
+| Command admin | `/createpark` `/setparkpos` `/removepark` `/gotopark` `/parkhelp` (di-rename dari `creategarage` dll agar tak bentrok GARAGE) |
+| Fungsi baru | `Park_Refresh()` (pickup+label 3D), `ShowParkedVehicle()`, dialog `DIALOG_GARKOT`/`DIALOG_PARKTAKE` |
+| Database | `migration_garasi_umum.sql` — tabel `parks` + kolom `vehicle.parkpoint` |
+| Init | `LoadPark()` dipanggil di `OnGameModeInit` |
+
+> ⚠️ **Wajib** jalankan migrasi DB sebelum pakai: `mysql -u root hrp < migration_garasi_umum.sql`
 
 ---
 

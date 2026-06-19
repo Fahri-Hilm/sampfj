@@ -50,6 +50,7 @@ enum pvdata
 	cBreaking,
 	cCooldown,
 	cGaraged,
+	cParkPoint,
 	cDeath,
 	cStolen,
 	cUpgrade[4],
@@ -594,10 +595,11 @@ function LoadPlayerVehicle(playerid)
 			cache_get_value_name_int(z, "box", pvData[i][cBox]);
 			cache_get_value_name_int(z, "rental", pvData[i][cRent]);
 			cache_get_value_name_int(z, "park", pvData[i][cGaraged]);
+			cache_get_value_name_int(z, "parkpoint", pvData[i][cParkPoint]);
 			cache_get_value_name_int(z, "broken", pvData[i][cStolen]);
 			cache_get_value_name_int(z, "trunk", pvData[i][cTrunk]);
 			Iter_Add(PVehicles, i);
-			if(pvData[i][cClaim] == 0 && pvData[i][cDeath] == 0 && pvData[i][cGaraged] == -1 && pvData[i][cStolen] == 0)
+			if(pvData[i][cClaim] == 0 && pvData[i][cDeath] == 0 && pvData[i][cGaraged] == -1 && pvData[i][cParkPoint] == -1 && pvData[i][cStolen] == 0)
 			{
 				pvData[i][cVeh] = CreateVehicle(pvData[i][cModel], pvData[i][cPosX], pvData[i][cPosY], pvData[i][cPosZ], pvData[i][cPosA], pvData[i][cColor1], pvData[i][cColor2], -1);
 				SetVehicleNumberPlate(pvData[i][cVeh], pvData[i][cPlate]);
@@ -747,6 +749,7 @@ function RemovePlayerVehicle(playerid)
 			mysql_format(g_SQL, cQuery, sizeof(cQuery), "%s`gasoil`=%d,", cQuery, pvData[i][cGasOil]);
 			mysql_format(g_SQL, cQuery, sizeof(cQuery), "%s`box`=%d, ", cQuery, pvData[i][cBox]);
 			mysql_format(g_SQL, cQuery, sizeof(cQuery), "%s`park`=%d,", cQuery, pvData[i][cGaraged]);
+			mysql_format(g_SQL, cQuery, sizeof(cQuery), "%s`parkpoint`=%d,", cQuery, pvData[i][cParkPoint]);
 			mysql_format(g_SQL, cQuery, sizeof(cQuery), "%s`broken`=%d,", cQuery, pvData[i][cStolen]);
 			mysql_format(g_SQL, cQuery, sizeof(cQuery), "%s`rental`=%d,", cQuery, pvData[i][cRent]);
 			mysql_format(g_SQL, cQuery, sizeof(cQuery), "%s`trunk`=%d ", cQuery, pvData[i][cTrunk]);
@@ -805,6 +808,7 @@ function OnVehCreated(playerid, oid, pid, model, color1, color2, Float:x, Float:
 	pvData[i][cBox] = 0;
 	pvData[i][cRent] = 0;
 	pvData[i][cGaraged] = -1;
+	pvData[i][cParkPoint] = -1;
 	
 	pvData[i][cStolen] = 0;
 	pvData[i][cImpounded] = 0;
@@ -856,6 +860,7 @@ function OnVehStarterpack(playerid, pid, model, color1, color2, Float:x, Float:y
 	pvData[i][cBox] = 0;
 	pvData[i][cRent] = 0;
 	pvData[i][cGaraged] = -1;
+	pvData[i][cParkPoint] = -1;
 	
 	pvData[i][cStolen] = 0;
 	pvData[i][cImpounded] = 0;
@@ -903,6 +908,7 @@ function OnVehBuyPV(playerid, pid, model, color1, color2, cost, Float:x, Float:y
 	pvData[i][cBox] = 0;
 	pvData[i][cRent] = 0;
 	pvData[i][cGaraged] = -1;
+	pvData[i][cParkPoint] = -1;
 	
 	pvData[i][cStolen] = 0;
 	pvData[i][cImpounded] = 0;
@@ -951,6 +957,7 @@ function OnVehBuyVIPPV(playerid, pid, model, color1, color2, cost, Float:x, Floa
 	pvData[i][cBox] = 0;
 	pvData[i][cRent] = 0;
 	pvData[i][cGaraged] = -1;
+	pvData[i][cParkPoint] = -1;
 	
 	pvData[i][cStolen] = 0;
 	pvData[i][cImpounded] = 0;
@@ -998,6 +1005,7 @@ function OnVehRentPV(playerid, pid, model, color1, color2, cost, Float:x, Float:
 	pvData[i][cBox] = 0;
 	pvData[i][cRent] = rental;
 	pvData[i][cGaraged] = -1;
+	pvData[i][cParkPoint] = -1;
 	
 	pvData[i][cStolen] = 0;
 	pvData[i][cImpounded] = 0;
@@ -1046,6 +1054,7 @@ function OnVehRentBike(playerid, pid, model, color1, color2, cost, Float:x, Floa
 	pvData[i][cBox] = 0;
 	pvData[i][cRent] = rental;
 	pvData[i][cGaraged] = -1;
+	pvData[i][cParkPoint] = -1;
 	
 	pvData[i][cStolen] = 0;
 	pvData[i][cImpounded] = 0;
@@ -1095,6 +1104,7 @@ function OnVehRentBoat(playerid, pid, model, color1, color2, cost, Float:x, Floa
 	pvData[i][cBox] = 0;
 	pvData[i][cRent] = rental;
 	pvData[i][cGaraged] = -1;
+	pvData[i][cParkPoint] = -1;
 	pvData[i][cStolen] = 0;
 	pvData[i][cImpounded] = 0;
 	pvData[i][cImpoundPrice] = 0;
