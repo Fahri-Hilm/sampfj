@@ -70,8 +70,8 @@ Changelog:
 
 #include <a_samp>
 
-#include "..\y_debug"
-#include "..\y_amx"
+#include "../y_debug"
+#include "../y_amx"
 
 #include "y_plugins"
 
@@ -87,7 +87,7 @@ Changelog:
 
 #define Hook:%0On%1(%2) UNIQUE_FUNCTION<@yH_%1...%0>(%2);UNIQUE_FUNCTION<@yH_%1...%0>(%2)
 
-#include "..\y_als"
+#include "../y_als"
 
 #if !defined HOOKS_MAX_UPDATES
 	// Slight increase from the previous version.

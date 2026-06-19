@@ -89,12 +89,12 @@ Optional plugins:
 	Me - sscanf2, fixes2, Whirlpool.
 */
 #if !defined _INC_y_master
-	#include "..\YSI_Internal\y_version"
+	#include "../YSI_Internal/y_version"
 	#include "y_debug"
-	#include "..\YSI_Coding\y_hooks"
-	#include "..\YSI_Internal\y_shortfunc"
+	#include "../YSI_Coding/y_hooks"
+	#include "../YSI_Internal/y_shortfunc"
 	
-	#include "..\YSI_Internal\y_natives"
+	#include "../YSI_Internal/y_natives"
 	
 	#include "y_master/once"
 #endif
@@ -108,11 +108,11 @@ Optional plugins:
 #if defined MASTER
 	#if defined _MASTER
 		// Store the last master.
-		#include "y_master\_push_master"
+		#include "y_master/_push_master"
 	#endif
 #else
 	// Get the previous master (or 0 by default).
-	#include "y_master\_pop_master"
+	#include "y_master/_pop_master"
 	
 	// Useful debug information (isn't compiled, but shows up with "-l").
 	P:C(static stock const _POPPED_MASTER = MASTER;);
@@ -124,25 +124,25 @@ Optional plugins:
 
 #if defined _INC_y_master
 	// Run at least once - clear previous data.
-	#include "y_master\_cleanup"
+	#include "y_master/_cleanup"
 #endif
 
 // Initialise the current master if it hasn't already been done.  This is split
 // in to 5 parts to reduce compilation times in the common case of not that many
 // master systems.
 #if     MASTER < 16
-	#include "y_master\_setup_master_A"
+	#include "y_master/_setup_master_A"
 #elseif MASTER < 32
-	#include "y_master\_setup_master_B"
+	#include "y_master/_setup_master_B"
 #elseif MASTER < 48
-	#include "y_master\_setup_master_C"
+	#include "y_master/_setup_master_C"
 #else
-	#include "y_master\_setup_master_D"
+	#include "y_master/_setup_master_D"
 #endif
 #undef MASTER
 
 // Include all the correct macro versions for the settings we have just found.
-#include "y_master\_impl"
+#include "y_master/_impl"
 
 #if defined _INC_y_master
 	#endinput
@@ -203,7 +203,7 @@ Optional plugins:
 
 // Only include this lot once.
 #if defined YSI_TESTS
-	#include "..\YSI_Core\y_testing"
+	#include "../YSI_Core/y_testing"
 	// Get the new master.
 	#define MASTER 58
 	#include "y_master"

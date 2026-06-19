@@ -62,9 +62,9 @@ Changelog:
 \**--------------------------------------------------------------------------**/
 
 #include <a_samp>
-#include "..\y_debug"
+#include "../y_debug"
 
-#include "..\y_colours"
+#include "../y_colours"
 
 // Custom specifier data.
 #define F@k<%0>(%1) F@k%0(%1)

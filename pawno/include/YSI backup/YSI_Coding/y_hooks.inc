@@ -3,7 +3,7 @@
 #endif
 
 // Multiple includes!
-#include "..\YSI_Internal\y_unique"
+#include "../YSI_Internal/y_unique"
 
 #if defined _INC_y_hooks
 	#endinput
@@ -101,21 +101,21 @@ Optional plugins:
 
 #include "y_hooks/macros"
 
-#include "..\YSI_Internal\y_unique"
-#include "..\YSI_Core\y_cell"
-#include "..\YSI_Core\y_utils"
-#include "..\YSI_Storage\y_amx"
-#include "..\YSI_Core\y_als"
+#include "../YSI_Internal/y_unique"
+#include "../YSI_Core/y_cell"
+#include "../YSI_Core/y_utils"
+#include "../YSI_Storage/y_amx"
+#include "../YSI_Core/y_als"
 
-#include "..\YSI_Internal\y_cgen"
+#include "../YSI_Internal/y_cgen"
 
-#include "..\YSI_Internal\y_thirdpartyinclude"
+#include "../YSI_Internal/y_thirdpartyinclude"
 //asm"
 
 #include "y_hooks/impl"
 
 #if defined YSI_TESTS
-	#include "..\YSI_Core\y_testing"
+	#include "../YSI_Core/y_testing"
 	#include "y_hooks/tests"
 	// Get some new IDs.
 	//#include "..\YSI_Internal\y_unique"

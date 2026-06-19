@@ -71,7 +71,7 @@ Optional plugins:
 */
 
 #tryinclude "y_hooks"
-#tryinclude "..\y_hooks"
+#tryinclude "../y_hooks"
 
 static stock
 	sgPlayerCounter[MAX_PLAYERS];
@@ -153,5 +153,5 @@ PTest:Timer3(playerid)
 }
 
 #tryinclude "y_hooks"
-#tryinclude "..\y_hooks"
+#tryinclude "../y_hooks"
 

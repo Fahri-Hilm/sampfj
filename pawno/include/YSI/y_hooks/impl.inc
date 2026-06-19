@@ -67,14 +67,14 @@ Changelog:
 </remarks>
 \**--------------------------------------------------------------------------**/
 
-#include "internal\y_version"
+#include "internal/y_version"
 
 #include <a_samp>
 
 #include "y_debug"
 #include "y_amx"
 
-#include "internal\y_plugins"
+#include "internal/y_plugins"
 
 #define ALS_MAKE<%0...%1> %0S@@%1
 

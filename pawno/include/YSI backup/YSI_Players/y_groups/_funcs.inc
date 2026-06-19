@@ -85,15 +85,15 @@ Optional plugins:
 
 */
 
-#include "..\..\YSI_Internal\y_compilerdata"
+#include "../../YSI_Internal/y_compilerdata"
 #if defined _inc__funcs
 	#undef _inc__funcs
 #endif
 #if !defined _INC_y_groups__funcs
 	#define _INC_y_groups__funcs
 	#include "setup"
-	#include "..\..\YSI_Internal\y_shortfunc"
-	#include "..\..\YSI_Data\y_iterate"
+	#include "../../YSI_Internal/y_shortfunc"
+	#include "../../YSI_Data/y_iterate"
 #endif
 
 #if !defined _GROUP_MAKE_TAG

@@ -181,7 +181,7 @@ Iterators:
 #endif
 #if !defined _FOREACH_NO_TEST
 	#define _FOREACH_INC_TEST
-	#tryinclude <YSI\y_iterate>
+	#tryinclude <YSI/y_iterate>
 	#undef _FOREACH_INC_TEST
 	// <foreach> exists - test which is newer.
 	#if defined _inc_y_iterate
@@ -189,7 +189,7 @@ Iterators:
 			// Foreach is newer.
 			#undef _inc_y_iterate
 			#define _FOREACH_NO_TEST
-			#include <YSI\y_iterate>
+			#include <YSI/y_iterate>
 			#endinput
 		#endif
 	#endif

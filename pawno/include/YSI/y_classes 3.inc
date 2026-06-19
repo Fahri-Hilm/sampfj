@@ -131,7 +131,7 @@ Operators:
 	-
 \*----------------------------------------------------------------------------*/
 
-#include "internal\y_version"
+#include "internal/y_version"
 #include "y_bit"
 #include "y_debug"
 
@@ -978,4 +978,4 @@ global Class_DisableSelection()
 }
 
 //#define YSI_SET_LAST_GROUP 22	
-#include "internal\y_grouprevert"
+#include "internal/y_grouprevert"

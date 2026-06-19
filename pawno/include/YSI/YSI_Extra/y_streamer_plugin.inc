@@ -71,19 +71,19 @@ Optional plugins:
 */
 
 #if !defined _INC_y_streamer_plugin
-	#tryinclude "y_streamer_plugin\y_streamer_plugin_entry"
+	#tryinclude "y_streamer_plugin/y_streamer_plugin_entry"
 #endif
 #if !defined _INC_y_streamer_plugin
-	#tryinclude "YSI_Extra\y_streamer_plugin\y_streamer_plugin_entry"
+	#tryinclude "YSI_Extra/y_streamer_plugin/y_streamer_plugin_entry"
 #endif
 #if !defined _INC_y_streamer_plugin
-	#tryinclude "YSI\YSI_Extra\y_streamer_plugin\y_streamer_plugin_entry"
+	#tryinclude "YSI/YSI_Extra/y_streamer_plugin/y_streamer_plugin_entry"
 #endif
 #if !defined _INC_y_streamer_plugin
-	#tryinclude <YSI_Extra\y_streamer_plugin\y_streamer_plugin_entry>
+	#tryinclude <YSI_Extra/y_streamer_plugin/y_streamer_plugin_entry>
 #endif
 #if !defined _INC_y_streamer_plugin
-	#tryinclude <YSI\YSI_Extra\y_streamer_plugin\y_streamer_plugin_entry>
+	#tryinclude <YSI/YSI_Extra/y_streamer_plugin/y_streamer_plugin_entry>
 #endif
 #if !defined _INC_y_streamer_plugin
 	#error Could not find y_streamer_plugin

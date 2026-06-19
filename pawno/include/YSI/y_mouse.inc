@@ -88,7 +88,7 @@ Operators:
 </remarks>
 \**--------------------------------------------------------------------------**/
 
-#include "internal\y_version"
+#include "internal/y_version"
 #include "y_hooks"
 
 enum E_MOUSE_PLAYER_RESTORE

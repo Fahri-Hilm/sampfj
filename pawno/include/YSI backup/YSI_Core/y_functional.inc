@@ -88,15 +88,15 @@ Optional plugins:
 
 #include "y_utils"
 #include y_debug
-#include "..\YSI_Storage\y_amx"
-#include "..\YSI_Coding\y_inline"
+#include "../YSI_Storage/y_amx"
+#include "../YSI_Coding/y_inline"
 
-#include "..\YSI_Internal\y_thirdpartyinclude"
+#include "../YSI_Internal/y_thirdpartyinclude"
 #include "y_functional/impl"
 #include "y_functional/rewrite"
 
 #if defined YSI_TESTS
-	#include "..\YSI_Core\y_testing"
+	#include "../YSI_Core/y_testing"
 	#include "y_functional/tests"
 #endif
 

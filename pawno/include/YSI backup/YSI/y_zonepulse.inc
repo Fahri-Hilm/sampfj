@@ -73,4 +73,4 @@ Optional plugins:
 	#undef _inc_y_zonepulse
 #endif
 
-#include "..\YSI_Visual\y_zonepulse"
+#include "../YSI_Visual/y_zonepulse"

@@ -93,8 +93,8 @@ Operators:
 </remarks>
 \**--------------------------------------------------------------------------**/
 
-#include "internal\y_version"
-#include "internal\y_funcinc"
+#include "internal/y_version"
+#include "internal/y_funcinc"
 #include "y_utils"
 
 stock va_printf(const fmat[], va_:STATIC_ARGS)

@@ -154,17 +154,17 @@ Optional plugins:
 	Me - sscanf2, fixes2, Whirlpool.
 */
 
-#include "..\YSI_Internal\y_compilerdata"
-#include "..\YSI_Internal\y_version"
+#include "../YSI_Internal/y_compilerdata"
+#include "../YSI_Internal/y_version"
 
-#include "..\YSI_Core\y_debug"
-#include "..\YSI_Storage\y_amx"
+#include "../YSI_Core/y_debug"
+#include "../YSI_Storage/y_amx"
 //#tryinclude <sscanf>
 
-#include "..\YSI_Internal\y_thirdpartyinclude"
-#include "..\YSI_Internal\y_funcinc"
+#include "../YSI_Internal/y_thirdpartyinclude"
+#include "../YSI_Internal/y_funcinc"
 // Add new tags to the START of this list.
-#include "..\YSI_Internal\y_globaltags"
+#include "../YSI_Internal/y_globaltags"
 
 // VERY VERY VERY IMPORTANT!!! y_inline uses "130" instead of "YSI_MAX_STRING"
 // for two lines (one is "520" for "130 * 4").
@@ -1480,6 +1480,6 @@ stock Range(arr[], num = sizeof (arr))
 	return max - min;
 }
 
-#include "..\YSI_Coding\y_va"
-#include "..\YSI_Internal\y_shortfunc"
+#include "../YSI_Coding/y_va"
+#include "../YSI_Internal/y_shortfunc"
 

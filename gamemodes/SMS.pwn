@@ -33,7 +33,7 @@ Sms_Clear(playerid)
         }
     }
 }*/
-#include <YSI_Coding\y_hooks>
+#include <YSI_Coding/y_hooks>
 
 hook OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {

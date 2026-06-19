@@ -73,4 +73,4 @@ Optional plugins:
 	#undef _inc_y_properties
 #endif
 
-#include "..\YSI_Visual\y_properties"
+#include "../YSI_Visual/y_properties"

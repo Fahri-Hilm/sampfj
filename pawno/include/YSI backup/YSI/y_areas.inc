@@ -73,4 +73,4 @@ Optional plugins:
 	#undef _inc_y_areas
 #endif
 
-#include "..\YSI_Visual\y_areas"
+#include "../YSI_Visual/y_areas"

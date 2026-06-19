@@ -18,7 +18,7 @@ CMD:bad(playerid, params[])
     return 1;
 }
 
-#include <YSI_Coding\y_hooks>
+#include <YSI_Coding/y_hooks>
 
 hook OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {

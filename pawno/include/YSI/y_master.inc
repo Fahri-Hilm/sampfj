@@ -73,4 +73,4 @@ Optional plugins:
 	#undef _inc_y_master
 #endif
 
-#include "..\YSI_Core\y_master"
+#include "../YSI_Core/y_master"

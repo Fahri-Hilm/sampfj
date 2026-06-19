@@ -154,20 +154,20 @@ Optional plugins:
 	Me - sscanf2, fixes2, Whirlpool.
 */
 
-#include "..\YSI_Internal\y_compilerdata"
+#include "../YSI_Internal/y_compilerdata"
 
 #if defined YSI_MALLOC_SECURE
 	#error YSI_MALLOC_SECURE has been removed.
 #endif
 
-#include "..\YSI_Internal\y_version"
-#include "..\YSI_Internal\y_funcinc"
-#include "..\YSI_Core\y_debug"
-#include "..\YSI_Storage\y_amx"
-#include "..\YSI_Core\y_als"
-#include "..\YSI_Core\y_utils"
+#include "../YSI_Internal/y_version"
+#include "../YSI_Internal/y_funcinc"
+#include "../YSI_Core/y_debug"
+#include "../YSI_Storage/y_amx"
+#include "../YSI_Core/y_als"
+#include "../YSI_Core/y_utils"
 
-#include "..\YSI_Internal\y_thirdpartyinclude"
+#include "../YSI_Internal/y_thirdpartyinclude"
 
 #define GB_TO_MB(%0) ((%0) * 1024)
 
@@ -289,7 +289,7 @@ forward Alloc:calloc(size);
 // Functions to access the data on the heap.
 #include "y_malloc/funcs"
 #if defined YSI_TESTS
-	#include "..\YSI_Core\y_testing"
+	#include "../YSI_Core/y_testing"
 	#include "y_malloc/tests"
 #endif
 

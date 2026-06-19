@@ -87,8 +87,8 @@ Optional plugins:
 	Me - sscanf2, fixes2, Whirlpool.
 */
 
-#include "..\YSI_Storage\y_amx"
-#include "..\YSI_Internal\y_thirdpartyinclude"
+#include "../YSI_Storage/y_amx"
+#include "../YSI_Internal/y_thirdpartyinclude"
 
 // We use "STE" not a string literal as we are trying to use up code space, not
 // data space!

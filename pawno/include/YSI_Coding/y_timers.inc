@@ -97,16 +97,16 @@ Optional plugins:
 	#endinput
 #endif
 
-#include "..\YSI_Internal\y_plugins"
+#include "../YSI_Internal/y_plugins"
 
-#include "..\YSI_Internal\y_version"
+#include "../YSI_Internal/y_version"
 
-#include "..\YSI_Storage\y_amx"
-#include "..\YSI_Internal\y_shortfunc"
-#include "..\YSI_Coding\y_malloc"
-#include "..\YSI_Data\y_iterate"
-#include "..\YSI_Coding\y_hooks"
-#include "..\YSI_Core\y_debug"
+#include "../YSI_Storage/y_amx"
+#include "../YSI_Internal/y_shortfunc"
+#include "../YSI_Coding/y_malloc"
+#include "../YSI_Data/y_iterate"
+#include "../YSI_Coding/y_hooks"
+#include "../YSI_Core/y_debug"
 
 #include "y_timers/impl"
 #if defined _YSI_PLUGINS_FIXES_2
@@ -117,6 +117,6 @@ Optional plugins:
 #endif
 
 #if defined YSI_TESTS
-	#include "..\YSI_Core\y_testing"
+	#include "../YSI_Core/y_testing"
 	#include "y_timers/tests"
 #endif

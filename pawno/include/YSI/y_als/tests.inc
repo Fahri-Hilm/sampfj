@@ -1,4 +1,4 @@
-#include "..\y_va"
+#include "../y_va"
 
 #if !defined ALS_MAKE
 	#define ALS_MAKE<%0...%1> %0__T_%1

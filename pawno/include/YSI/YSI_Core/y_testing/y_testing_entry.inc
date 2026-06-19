@@ -77,13 +77,13 @@ Optional plugins:
 
 forward bool:_Testing_End();
 
-#include "..\y_utils"
-#include "..\..\YSI_Server\y_stringise"
+#include "../y_utils"
+#include "../../YSI_Server/y_stringise"
 
-#tryinclude "..\..\amx\amx_memory"
-#tryinclude <amx_assembly\amx_memory>
-#tryinclude "..\..\amx_assembly\amx_memory"
-#tryinclude "..\..\..\amx_assembly\amx_memory"
+#tryinclude "../../amx/amx_memory"
+#tryinclude <amx_assembly/amx_memory>
+#tryinclude "../../amx_assembly/amx_memory"
+#tryinclude "../../../amx_assembly/amx_memory"
 #tryinclude "amx_memory"
 #tryinclude <amx_memory>
 
@@ -921,8 +921,8 @@ TEST__ y_testing_Asserts()
 #endif
 
 #if defined YSI_TESTS
-	#include "..\y_core\y_utils_tests"
-	#include "..\y_core\y_als_tests"
-	#include "..\y_core\y_cell_tests"
+	#include "../y_core/y_utils_tests"
+	#include "../y_core/y_als_tests"
+	#include "../y_core/y_cell_tests"
 #endif
 

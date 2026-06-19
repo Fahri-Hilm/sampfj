@@ -73,4 +73,4 @@ Optional plugins:
 	#undef _inc_y_debug
 #endif
 
-#include "..\YSI_Core\y_debug"
+#include "../YSI_Core/y_debug"

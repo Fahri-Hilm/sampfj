@@ -73,4 +73,4 @@ Optional plugins:
 	#undef _inc_y_testing
 #endif
 
-#include "..\YSI_Core\y_testing"
+#include "../YSI_Core/y_testing"

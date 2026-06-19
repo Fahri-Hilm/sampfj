@@ -73,4 +73,4 @@ Optional plugins:
 	#undef _inc_y_scriptinit
 #endif
 
-#include "..\YSI_Server\y_scriptinit"
+#include "../YSI_Server/y_scriptinit"

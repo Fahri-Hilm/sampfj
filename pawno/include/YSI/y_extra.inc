@@ -73,4 +73,4 @@ Optional plugins:
 	#undef _inc_y_extra
 #endif
 
-#include "..\YSI_Extra\y_extra"
+#include "../YSI_Extra/y_extra"

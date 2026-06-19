@@ -63,7 +63,7 @@ Changelog:
 #undef _inc_y_hooks
 
 // Multiple includes!
-#include "internal\y_unique"
+#include "internal/y_unique"
 
 #if defined _INC_y_hooks
 	#endinput
@@ -71,7 +71,7 @@ Changelog:
 // Everything except including "y_unique" is done once only.
 #define _INC_y_hooks
 
-#include "internal\y_version"
+#include "internal/y_version"
 #include <a_samp>
 #include "y_debug"
 

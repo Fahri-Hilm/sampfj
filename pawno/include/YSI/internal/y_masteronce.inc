@@ -116,8 +116,8 @@ Natives:
 // the current MASTER value, it's all generic.
 
 #include "y_version"
-#include "..\y_debug"
-#include "..\y_hooks"
+#include "../y_debug"
+#include "../y_hooks"
 #include "y_shortfunc"
 
 #include "y_natives"

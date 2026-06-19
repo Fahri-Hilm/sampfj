@@ -73,4 +73,4 @@ Optional plugins:
 	#undef _inc_y_vehicledata
 #endif
 
-#include "..\YSI_Game\y_vehicledata"
+#include "../YSI_Game/y_vehicledata"

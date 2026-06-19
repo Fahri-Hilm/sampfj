@@ -73,4 +73,4 @@ Optional plugins:
 	#undef _inc_y_cell
 #endif
 
-#include "..\YSI_Core\y_cell"
+#include "../YSI_Core/y_cell"

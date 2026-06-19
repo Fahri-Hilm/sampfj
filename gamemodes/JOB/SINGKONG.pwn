@@ -1,4 +1,4 @@
-#include "YSI_Coding\y_hooks"
+#include "YSI_Coding/y_hooks"
 #define MAX_GANJA 50
 
 enum    E_GANJA

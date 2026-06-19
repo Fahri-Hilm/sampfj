@@ -73,4 +73,4 @@ Optional plugins:
 	#undef _inc_y_amx
 #endif
 
-#include "..\YSI_Storage\y_amx"
+#include "../YSI_Storage/y_amx"

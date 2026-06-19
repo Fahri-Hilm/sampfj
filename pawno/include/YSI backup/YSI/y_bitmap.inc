@@ -73,4 +73,4 @@ Optional plugins:
 	#undef _inc_y_bitmap
 #endif
 
-#include "..\YSI_Storage\y_bitmap"
+#include "../YSI_Storage/y_bitmap"

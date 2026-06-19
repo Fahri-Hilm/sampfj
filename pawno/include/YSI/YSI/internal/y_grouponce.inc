@@ -61,24 +61,24 @@ Changelog:
 
 #include <a_samp>
 
-#include "..\y_scriptinit"
+#include "../y_scriptinit"
 
 //#include "..\y_master"
 #define YSIM_U_DISABLE
-#include "..\y_master"
-#include "..\y_playerarray"
+#include "../y_master"
+#include "../y_playerarray"
 
-#include "..\y_stringhash"
-#include "..\y_debug"
-#include "..\y_remote"
+#include "../y_stringhash"
+#include "../y_debug"
+#include "../y_remote"
 
 //#include "..\y_hooks"
-#include "..\y_amx"
+#include "../y_amx"
 //#include "..\y_cell"
 
-#include "..\y_iterate"
+#include "../y_iterate"
 
-#include "..\y_hooks"
+#include "../y_hooks"
 
 
 
@@ -1612,4 +1612,4 @@ global Group_GetGlobalGroup(Group:el)
 }
 
 #define _YSIM_RESET_USER
-#include "..\y_master"
+#include "../y_master"

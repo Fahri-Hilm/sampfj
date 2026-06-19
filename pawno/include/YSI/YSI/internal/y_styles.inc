@@ -68,9 +68,9 @@ Variables:
 
 #include "y_version"
 
-#include "..\y_xml"
-#include "..\y_td"
-#include "..\y_colours"
+#include "../y_xml"
+#include "../y_td"
+#include "../y_colours"
 
 //#include "..\y_hooks"
 

@@ -11,7 +11,7 @@
 #define ENABLE_3D_TRYG_YSI_SUPPORT
 #include <streamer>
 #include <EVF2>
-#include <YSI_Coding\y_timers>
+#include <YSI_Coding/y_timers>
 #include <sscanf2>
 #include <3DTryg>
 #include <yom_buttons>
@@ -1443,24 +1443,24 @@ main() {}
 #include "CONTACT.pwn"
 #include "CALLPHONE.pwn"
 #include "TOLL.pwn"
-#include "JOB\JOB_PRODUCTION.pwn"
-#include "JOB\JOB_FORKLIFT.pwn"
-#include "JOB\JOB_SMUGGLER.pwn"
-#include "JOB\JOB_SWEEPER.pwn"
-#include "JOB\JOB_TRUCKER.pwn"
-#include "JOB\JOB_BAGGAGE.pwn"
-#include "JOB\JOB_LUMBER.pwn"
-#include "JOB\JOB_FARMER.pwn"
-#include "JOB\JOB_MINER.pwn"
-#include "JOB\JOB_MOWER.pwn"
-#include "JOB\JOB_TAXI.pwn"
-#include "JOB\JOB_MECH.pwn"
-#include "JOB\JOB_FISH.pwn"
-#include "JOB\JOB_BUS.pwn"
+#include "JOB/JOB_PRODUCTION.pwn"
+#include "JOB/JOB_FORKLIFT.pwn"
+#include "JOB/JOB_SMUGGLER.pwn"
+#include "JOB/JOB_SWEEPER.pwn"
+#include "JOB/JOB_TRUCKER.pwn"
+#include "JOB/JOB_BAGGAGE.pwn"
+#include "JOB/JOB_LUMBER.pwn"
+#include "JOB/JOB_FARMER.pwn"
+#include "JOB/JOB_MINER.pwn"
+#include "JOB/JOB_MOWER.pwn"
+#include "JOB/JOB_TAXI.pwn"
+#include "JOB/JOB_MECH.pwn"
+#include "JOB/JOB_FISH.pwn"
+#include "JOB/JOB_BUS.pwn"
 
-#include "CMD\FACTION.pwn"
-#include "CMD\PLAYER.pwn"
-#include "CMD\ADMIN.pwn"
+#include "CMD/FACTION.pwn"
+#include "CMD/PLAYER.pwn"
+#include "CMD/ADMIN.pwn"
 
 #include "SAPD_TASER.pwn"
 #include "SAPD_SPIKE.pwn"
@@ -1476,21 +1476,21 @@ main() {}
 #include "SMS.pwn"
 //#include "INVENTORY.pwn"
 /*
-#include "CMD\ALIAS\ALIAS_PRIVATE_VEHICLE.pwn"
-#include "CMD\ALIAS\ALIAS_PLAYER.pwn"
-#include "CMD\ALIAS\ALIAS_BISNIS.pwn"
-#include "CMD\ALIAS\ALIAS_ADMIN.pwn"
-#include "CMD\ALIAS\ALIAS_HOUSE.pwn"*/
+#include "CMD/ALIAS/ALIAS_PRIVATE_VEHICLE.pwn"
+#include "CMD/ALIAS/ALIAS_PLAYER.pwn"
+#include "CMD/ALIAS/ALIAS_BISNIS.pwn"
+#include "CMD/ALIAS/ALIAS_ADMIN.pwn"
+#include "CMD/ALIAS/ALIAS_HOUSE.pwn"*/
 
 #include "EVENT.pwn"
-//#include "DISCORD\REGISTERDISCORD.pwn"
+//#include "DISCORD/REGISTERDISCORD.pwn"
 #include "DAMAGELOG.pwn"
 
 #include "FUNCTION.pwn"
 
 #include "TASK.pwn"
 
-//#include "CMD\DISCORD.pwn"
+//#include "CMD/DISCORD.pwn"
 
 //------[ function ]------
 ShowDialogToPlayer(playerid, dialogid)
@@ -5783,7 +5783,7 @@ public OnVehicleDamageStatusUpdate(vehicleid, playerid)
         Float: vehicleHealth,
         playerVehicleId = GetPlayerVehicleID(playerid);
 
-    new Float:health = GetPlayerHealth(playerid, health);
+    new Float:health; GetPlayerHealth(playerid, health);
     GetVehicleHealth(playerVehicleId, vehicleHealth);
     if(pData[playerid][pSeatBelt] == 0 || pData[playerid][pHelmetOn] == 0)
     {

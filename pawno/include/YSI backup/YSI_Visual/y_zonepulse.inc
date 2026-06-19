@@ -115,10 +115,10 @@ native GangZoneStopPulseForAll(zone);
 */
 
 #include <a_samp>
-#include "..\YSI_Internal\y_version"
-#include "..\YSI_Data\y_playerset"
-#include "..\YSI_Data\y_iterate"
-#include "..\YSI_Core\y_debug"
+#include "../YSI_Internal/y_version"
+#include "../YSI_Data/y_playerset"
+#include "../YSI_Data/y_iterate"
+#include "../YSI_Core/y_debug"
 
 #if !defined ZONE_PULSE_STAGE_TIME
 	#define ZONE_PULSE_STAGE_TIME (50)
@@ -126,6 +126,6 @@ native GangZoneStopPulseForAll(zone);
 
 #include "y_zonepulse/impl"
 #if defined YSI_TESTS
-	#include "..\YSI_Core\y_testing"
+	#include "../YSI_Core/y_testing"
 	#include "y_zonepulse/tests"
 #endif

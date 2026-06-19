@@ -73,4 +73,4 @@ Optional plugins:
 	#undef _inc_y_text
 #endif
 
-#include "..\YSI_Players\y_text"
+#include "../YSI_Players/y_text"

@@ -73,4 +73,4 @@ Optional plugins:
 	#undef _inc_y_flooding
 #endif
 
-#include "..\YSI_Server\y_flooding"
+#include "../YSI_Server/y_flooding"

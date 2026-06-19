@@ -1071,7 +1071,7 @@ stock Vehicle_Speed(vehicleid)
 #undef e_VEHICLE_FLAGS_END
 
 #if defined YSI_TESTS
-	#include "..\..\YSI_Core\y_utils"
+	#include "../../YSI_Core/y_utils"
 	#include "y_vehicledata_tests"
 #endif
 

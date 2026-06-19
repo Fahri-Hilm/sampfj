@@ -1464,7 +1464,7 @@ CMD:inventory(playerid, params[])
 	Inventory_Show(playerid);
 	return 1;
 }
-#include <YSI_Coding\y_hooks>
+#include <YSI_Coding/y_hooks>
 
 hook OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {

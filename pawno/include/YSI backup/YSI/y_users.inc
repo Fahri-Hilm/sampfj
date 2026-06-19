@@ -73,4 +73,4 @@ Optional plugins:
 	#undef _inc_y_users
 #endif
 
-#include "..\YSI_Players\y_users"
+#include "../YSI_Players/y_users"

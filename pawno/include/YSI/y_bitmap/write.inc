@@ -225,7 +225,7 @@ stock bool:Bitmap_Write(Bitmap:ctx, const file[])
 #pragma dynamic 16680064
 
 #include <a_samp>
-#include <YSI\y_colours>
+#include <YSI/y_colours>
 
 new
 	gAlphabet[10][26 + 1 + 10 + 1] =

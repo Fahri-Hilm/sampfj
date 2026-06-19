@@ -73,4 +73,4 @@ Optional plugins:
 	#undef _inc_y_stringhash
 #endif
 
-#include "..\YSI_Coding\y_stringhash"
+#include "../YSI_Coding/y_stringhash"

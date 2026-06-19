@@ -105,17 +105,17 @@ Optional plugins:
 #elseif defined SVAR_USE_SQLITE
 	#include "y_svar/sqlite"
 #else
-	#include "..\YSI_Internal\y_version"
-	#include "..\YSI_Storage\y_amx"
-	#include "..\YSI_Core\y_debug"
-	#include "..\YSI_Core\y_utils"
-	#include "..\YSI_Storage\y_ini"
-	#include "..\YSI_Coding\y_hooks"
-	#include "..\YSI_Internal\y_stripnumbers"
+	#include "../YSI_Internal/y_version"
+	#include "../YSI_Storage/y_amx"
+	#include "../YSI_Core/y_debug"
+	#include "../YSI_Core/y_utils"
+	#include "../YSI_Storage/y_ini"
+	#include "../YSI_Coding/y_hooks"
+	#include "../YSI_Internal/y_stripnumbers"
 	
 	#include "y_svar/ini"
 #endif
 #if defined YSI_TESTS
-	#include "..\YSI_Core\y_testing"
+	#include "../YSI_Core/y_testing"
 	#include "y_svar/tests"
 #endif

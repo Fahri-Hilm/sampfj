@@ -63,14 +63,14 @@ Variables:
 </remarks>
 \**--------------------------------------------------------------------------**/
 
-#include "..\y_utils"
-#include "..\y_colours"
-#include "..\y_debug"
+#include "../y_utils"
+#include "../y_colours"
+#include "../y_debug"
 //#include "..\y_ini"
 #include "y_shortfunc"
 
 #include "y_natives"
-#include "..\y_va"
+#include "../y_va"
 
 #if !defined FORMAT_FADE_STEP
 	#define FORMAT_FADE_STEP 2

@@ -73,4 +73,4 @@ Optional plugins:
 	#undef _inc_y_malloc
 #endif
 
-#include "..\YSI_Coding\y_malloc"
+#include "../YSI_Coding/y_malloc"

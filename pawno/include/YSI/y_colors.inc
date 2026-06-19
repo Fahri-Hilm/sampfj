@@ -73,4 +73,4 @@ Optional plugins:
 	#undef _inc_y_colors
 #endif
 
-#include "..\YSI_Server\y_colors"
+#include "../YSI_Server/y_colors"

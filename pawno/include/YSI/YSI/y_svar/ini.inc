@@ -62,7 +62,7 @@ Variables:
 </remarks>
 \**--------------------------------------------------------------------------**/
 
-#include "internal\y_version"
+#include "internal/y_version"
 
 #include "y_amx"
 #include "y_debug"
@@ -72,7 +72,7 @@ Variables:
 
 #include "y_hooks"
 
-#include "internal\y_stripnumbers"
+#include "internal/y_stripnumbers"
 
 // Third "uvar" version.
 #define _YS@LE@E%0>

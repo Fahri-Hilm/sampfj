@@ -104,9 +104,9 @@ Natives:
 	#define void:
 #endif
 
-#include "..\y_utils"
+#include "../y_utils"
 #include "y_globaltags"
-#include "..\y_debug"
+#include "../y_debug"
 
 #include "y_renative"
 
@@ -227,7 +227,7 @@ stock F@()
 #define _:%0,) %0)
 
 #if defined YSI_LOCK_MODE
-	#include "..\y_hooks"
+	#include "../y_hooks"
 	hook OnScriptInit()
 	{
 		new

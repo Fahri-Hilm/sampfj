@@ -75,8 +75,8 @@ Optional plugins:
 	Me - sscanf2, fixes2, Whirlpool.
 */
 
-#include "..\..\YSI_Core\y_utils"
-#include "..\..\YSI_Core\y_core\y_thirdpartyinclude"
+#include "../../YSI_Core/y_utils"
+#include "../../YSI_Core/y_core/y_thirdpartyinclude"
 
 #if defined YSI_MALLOC_SECURE
 	#error YSI_MALLOC_SECURE has been removed.

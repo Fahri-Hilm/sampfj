@@ -71,10 +71,10 @@ Changelog:
 
 // Disable this version!
 
-#include "internal\y_version"
+#include "internal/y_version"
 
 #include "y_amx"
-#include "internal\y_shortfunc"
+#include "internal/y_shortfunc"
 #include "y_malloc"
 #include "y_iterate"
 #include "y_hooks"

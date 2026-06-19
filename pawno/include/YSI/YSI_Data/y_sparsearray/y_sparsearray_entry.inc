@@ -75,7 +75,7 @@ Optional plugins:
 	Me - sscanf2, fixes2, Whirlpool.
 */
 
-#include "..\..\YSI_Core\y_utils"
+#include "../../YSI_Core/y_utils"
 
 #define SparseArray:%0<> %0[]=#%0
 
@@ -224,8 +224,8 @@ stock bool:Sparse_Exchange(const name[], index, &value, nv = cellmin)
 }
 
 #if defined YSI_TESTS
-	#include "..\y_iterate"
-	#include "..\y_bit"
+	#include "../y_iterate"
+	#include "../y_bit"
 	#include "y_sparsearray_tests"
 #endif
 

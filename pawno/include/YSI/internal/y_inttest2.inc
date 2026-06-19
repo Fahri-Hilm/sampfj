@@ -61,10 +61,10 @@ Changelog:
 #define _GROUP_MAKE_NAME_INTTEST2<%0...%1>      %0Inttest%1
 #define _GROUP_MAKE_LIMIT_INTTEST2              MAX_INTERNAL_TEST_ITEMS
 
-#include <YSI\y_master>
-#include <YSI\y_groups>
+#include <YSI/y_master>
+#include <YSI/y_groups>
 
-#include <YSI\y_bit>
+#include <YSI/y_bit>
 
 static
 	BitArray:gPlayers[MAX_INTERNAL_TEST_ITEMS]<MAX_PLAYERS>,
@@ -100,4 +100,4 @@ RF@v:Inttest_SetPlayer[iii](element, playerid, bool:set)
 }
 
 #define YSI_GROUPS_LAST 8
-#include <YSI\internal\y_grouprevert>
+#include <YSI/internal/y_grouprevert>

@@ -31,7 +31,7 @@
 
 #include <foreach> //credits to y_less
 #include <streamer> //credits to incognito
-#include <YSI\y_hooks> //credits to y_less
+#include <YSI/y_hooks> //credits to y_less
 
 /*
 native Natives();

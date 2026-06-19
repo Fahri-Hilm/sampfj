@@ -73,4 +73,4 @@ Optional plugins:
 	#undef _inc_y_zonenames
 #endif
 
-#include "..\YSI_Visual\y_zonenames"
+#include "../YSI_Visual/y_zonenames"

@@ -90,10 +90,10 @@ forward bool:_Testing_End();
 
 #include <a_samp>
 #include "y_debug"
-#include "..\YSI_Storage\y_amx"
-#include "..\YSI_Internal\y_thirdpartyinclude"
+#include "../YSI_Storage/y_amx"
+#include "../YSI_Internal/y_thirdpartyinclude"
 
-#include "..\YSI_Internal\y_shortvar"
+#include "../YSI_Internal/y_shortvar"
 
 #if defined YSI_TESTS
 	#if defined INCLUDE_TESTS
@@ -206,15 +206,15 @@ stock
 #endif
 
 // These all need to come AFTER the types are defined in case the have tests.
-#include "..\YSI_Internal\y_version"
+#include "../YSI_Internal/y_version"
 
-#include "..\YSI_Storage\y_amx"
-#include "..\YSI_Internal\y_shortfunc"
+#include "../YSI_Storage/y_amx"
+#include "../YSI_Internal/y_shortfunc"
 #include "y_debug"
 
-#include "..\YSI_Internal\y_natives"
+#include "../YSI_Internal/y_natives"
 
-#include "..\YSI_Coding\y_va"
+#include "../YSI_Coding/y_va"
 
 /*-------------------------------------------------------------------------*//**
  * <param name="name">Name of the current function.</param>
@@ -779,5 +779,5 @@ TestClose:y_testing_1()
 	++YSI_g_sTestResult;
 }
 
-#include "..\YSI_Internal\y_shortfunc"
+#include "../YSI_Internal/y_shortfunc"
 

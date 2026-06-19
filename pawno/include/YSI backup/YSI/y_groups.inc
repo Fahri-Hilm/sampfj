@@ -73,4 +73,4 @@ Optional plugins:
 	#undef _inc_y_groups
 #endif
 
-#include "..\YSI_Players\y_groups"
+#include "../YSI_Players/y_groups"

@@ -54,7 +54,7 @@ A basic example of using this module would be:
 	#include "geid.inc"
 #endif
 
-#include <YSI\y_hooks>
+#include <YSI/y_hooks>
 
 #define _SIF_ITEM_SERIALIZER_INCLUDED
 

@@ -73,4 +73,4 @@ Optional plugins:
 	#undef _inc_y_bit
 #endif
 
-#include "..\YSI_Data\y_bit"
+#include "../YSI_Data/y_bit"

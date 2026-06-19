@@ -105,7 +105,7 @@ Optional plugins:
 	#define MAX_PLAYER_NAME 24
 #endif
 
-#include "..\YSI_Server\y_scriptinit"
+#include "../YSI_Server/y_scriptinit"
 
 #define YSI_VERSION_RESPO               2
 

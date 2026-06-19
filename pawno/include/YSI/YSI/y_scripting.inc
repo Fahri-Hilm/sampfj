@@ -54,9 +54,9 @@ Changelog:
 		First version
 -*----------------------------------------------------------------------------*/
 
-#include <YSI\internal\y_version>
+#include <YSI/internal/y_version>
 
-#include <YSI\internal\y_funcinc>
+#include <YSI/internal/y_funcinc>
 
 #define Scripting_FastString(%1,%2,%3,%4) \
 	(((%1) << 0) | ((%2) << 8) | ((%3) << 16) | ((%4) << 24))

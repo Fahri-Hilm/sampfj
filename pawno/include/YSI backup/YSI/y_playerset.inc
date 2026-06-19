@@ -73,4 +73,4 @@ Optional plugins:
 	#undef _inc_y_playerset
 #endif
 
-#include "..\YSI_Data\y_playerset"
+#include "../YSI_Data/y_playerset"

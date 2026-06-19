@@ -106,7 +106,7 @@ Natives:
 	#define MAX_PLAYER_NAME 24
 #endif
 
-#include "..\y_scriptinit"
+#include "../y_scriptinit"
 
 #define YSI_VERSION_RESPO               2
 

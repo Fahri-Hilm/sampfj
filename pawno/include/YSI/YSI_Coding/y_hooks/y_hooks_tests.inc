@@ -642,8 +642,8 @@ public y_hooks_MyFunc1(a, b)
 	g_y_hooksVar += a + b;
 }
 
-#tryinclude "..\YSI_Coding\y_unique"
-#tryinclude "..\..\YSI_Coding\y_unique"
+#tryinclude "../YSI_Coding/y_unique"
+#tryinclude "../../YSI_Coding/y_unique"
 
 HOOK__ y_hooks_MyFunc1(a, b)
 {
@@ -651,8 +651,8 @@ HOOK__ y_hooks_MyFunc1(a, b)
 	g_y_hooksVar += a + b;
 }
 
-#tryinclude "..\YSI_Coding\y_unique"
-#tryinclude "..\..\YSI_Coding\y_unique"
+#tryinclude "../YSI_Coding/y_unique"
+#tryinclude "../../YSI_Coding/y_unique"
 
 HOOK__ y_hooks_MyFunc1(a, b)
 {
@@ -660,8 +660,8 @@ HOOK__ y_hooks_MyFunc1(a, b)
 	g_y_hooksVar += a + b;
 }
 
-#tryinclude "..\YSI_Coding\y_unique"
-#tryinclude "..\..\YSI_Coding\y_unique"
+#tryinclude "../YSI_Coding/y_unique"
+#tryinclude "../../YSI_Coding/y_unique"
 
 HOOK__ y_hooks_MyFunc1(a, b)
 {
@@ -669,8 +669,8 @@ HOOK__ y_hooks_MyFunc1(a, b)
 	g_y_hooksVar += a + b;
 }
 
-#tryinclude "..\YSI_Coding\y_unique"
-#tryinclude "..\..\YSI_Coding\y_unique"
+#tryinclude "../YSI_Coding/y_unique"
+#tryinclude "../../YSI_Coding/y_unique"
 
 HOOK__ y_hooks_MyFunc1(a, b)
 {
@@ -678,8 +678,8 @@ HOOK__ y_hooks_MyFunc1(a, b)
 	g_y_hooksVar += a + b;
 }
 
-#tryinclude "..\YSI_Coding\y_unique"
-#tryinclude "..\..\YSI_Coding\y_unique"
+#tryinclude "../YSI_Coding/y_unique"
+#tryinclude "../../YSI_Coding/y_unique"
 
 HOOK__ y_hooks_MyFunc1(a, b)
 {
@@ -849,8 +849,8 @@ HOOK__ OnTestNumArgs2(a, b, c, f)
 	ASSERT_EQ(numargs(), 4);
 }
 
-#tryinclude "..\YSI_Coding\y_unique"
-#tryinclude "..\..\YSI_Coding\y_unique"
+#tryinclude "../YSI_Coding/y_unique"
+#tryinclude "../../YSI_Coding/y_unique"
 
 HOOK__ OnTestNumArgs2(a, b, c, f)
 {

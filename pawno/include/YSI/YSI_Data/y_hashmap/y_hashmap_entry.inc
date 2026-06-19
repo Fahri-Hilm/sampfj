@@ -75,8 +75,8 @@ Optional plugins:
 	Me - sscanf2, fixes2, Whirlpool.
 */
 
-#include "..\..\YSI_Core\y_utils"
-#include "..\..\YSI_Coding\y_stringhash"
+#include "../../YSI_Core/y_utils"
+#include "../../YSI_Coding/y_stringhash"
 
 #include "y_hashmap_impl"
 

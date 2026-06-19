@@ -4481,7 +4481,7 @@ native BAD_gpci(playerid, serial[], maxlen) = gpci;
 		#tryinclude "a_http"
 	#endif
 	#if !defined HTTP_ERROR_MALFORMED_RESPONSE
-		#tryinclude "..\a_http"
+		#tryinclude "../a_http"
 	#endif
 	#if defined HTTP_ERROR_MALFORMED_RESPONSE
 		#if defined _ALS_HTTP

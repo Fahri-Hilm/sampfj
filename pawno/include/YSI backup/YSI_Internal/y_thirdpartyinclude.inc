@@ -95,40 +95,40 @@ Optional plugins:
 	#define CODE_SCAN_MAX_PATTERN (32)
 #endif
 
-#tryinclude "..\amx\amx"
-#tryinclude <amx_assembly\amx>
-#tryinclude "..\amx_assembly\amx"
-#tryinclude "..\..\amx_assembly\amx"
+#tryinclude "../amx/amx"
+#tryinclude <amx_assembly/amx>
+#tryinclude "../amx_assembly/amx"
+#tryinclude "../../amx_assembly/amx"
 #tryinclude "amx"
 #tryinclude <amx>
 #if !defined AMX_INC
 	#define AMX_INCLUDING_FAILED
 #endif
 
-#tryinclude "..\amx\amx_base"
-#tryinclude <amx_assembly\amx_base>
-#tryinclude "..\amx_assembly\amx_base"
-#tryinclude "..\..\amx_assembly\amx_base"
+#tryinclude "../amx/amx_base"
+#tryinclude <amx_assembly/amx_base>
+#tryinclude "../amx_assembly/amx_base"
+#tryinclude "../../amx_assembly/amx_base"
 #tryinclude "amx_base"
 #tryinclude <amx_base>
 #if !defined AMX_BASE_INC
 	#define AMX_INCLUDING_FAILED
 #endif
 
-#tryinclude "..\amx\amx_header"
-#tryinclude <amx_assembly\amx_header>
-#tryinclude "..\amx_assembly\amx_header"
-#tryinclude "..\..\amx_assembly\amx_header"
+#tryinclude "../amx/amx_header"
+#tryinclude <amx_assembly/amx_header>
+#tryinclude "../amx_assembly/amx_header"
+#tryinclude "../../amx_assembly/amx_header"
 #tryinclude "amx_header"
 #tryinclude <amx_header>
 #if !defined AMX_HEADER_INC
 	#define AMX_INCLUDING_FAILED
 #endif
 
-#tryinclude "..\amx\amx_memory"
-#tryinclude <amx_assembly\amx_memory>
-#tryinclude "..\amx_assembly\amx_memory"
-#tryinclude "..\..\amx_assembly\amx_memory"
+#tryinclude "../amx/amx_memory"
+#tryinclude <amx_assembly/amx_memory>
+#tryinclude "../amx_assembly/amx_memory"
+#tryinclude "../../amx_assembly/amx_memory"
 #tryinclude "amx_memory"
 #tryinclude <amx_memory>
 #if !defined AMX_MEMORY_INC
@@ -141,30 +141,30 @@ Optional plugins:
 	#error Please update "https://github.com/Zeex/amx_assembly" to get "GetAmxNextInstructionPointer()"
 #endif
 
-#tryinclude "..\amx\asm"
-#tryinclude <amx_assembly\asm>
-#tryinclude "..\amx_assembly\asm"
-#tryinclude "..\..\amx_assembly\asm"
+#tryinclude "../amx/asm"
+#tryinclude <amx_assembly/asm>
+#tryinclude "../amx_assembly/asm"
+#tryinclude "../../amx_assembly/asm"
 #tryinclude "asm"
 #tryinclude <asm>
 #if !defined ASM_INC
 	#define AMX_INCLUDING_FAILED
 #endif
 
-#tryinclude "..\amx\asm_macros"
-#tryinclude <amx_assembly\asm_macros>
-#tryinclude "..\amx_assembly\asm_macros"
-#tryinclude "..\..\amx_assembly\asm_macros"
+#tryinclude "../amx/asm_macros"
+#tryinclude <amx_assembly/asm_macros>
+#tryinclude "../amx_assembly/asm_macros"
+#tryinclude "../../amx_assembly/asm_macros"
 #tryinclude "asm_macros"
 #tryinclude <asm_macros>
 #if !defined ASM_MACROS_INC
 	#define AMX_INCLUDING_FAILED
 #endif
 
-#tryinclude "..\amx\codescan"
-#tryinclude <amx_assembly\codescan>
-#tryinclude "..\amx_assembly\codescan"
-#tryinclude "..\..\amx_assembly\codescan"
+#tryinclude "../amx/codescan"
+#tryinclude <amx_assembly/codescan>
+#tryinclude "../amx_assembly/codescan"
+#tryinclude "../../amx_assembly/codescan"
 #tryinclude "codescan"
 #tryinclude <codescan>
 #if !defined CODESCAN_INC
@@ -174,80 +174,80 @@ Optional plugins:
 	#error Please update "https://github.com/Zeex/amx_assembly" to get "AsmEmitCallAbs()"
 #endif
 
-#tryinclude "..\amx\disasm"
-#tryinclude <amx_assembly\disasm>
-#tryinclude "..\amx_assembly\disasm"
-#tryinclude "..\..\amx_assembly\disasm"
+#tryinclude "../amx/disasm"
+#tryinclude <amx_assembly/disasm>
+#tryinclude "../amx_assembly/disasm"
+#tryinclude "../../amx_assembly/disasm"
 #tryinclude "disasm"
 #tryinclude <disasm>
 #if !defined DISASM_INC
 	#define AMX_INCLUDING_FAILED
 #endif
 
-#tryinclude "..\amx\dynamic_call"
-#tryinclude <amx_assembly\dynamic_call>
-#tryinclude "..\amx_assembly\dynamic_call"
-#tryinclude "..\..\amx_assembly\dynamic_call"
+#tryinclude "../amx/dynamic_call"
+#tryinclude <amx_assembly/dynamic_call>
+#tryinclude "../amx_assembly/dynamic_call"
+#tryinclude "../../amx_assembly/dynamic_call"
 #tryinclude "dynamic_call"
 #tryinclude <dynamic_call>
 #if !defined DYNAMIC_CALL_INC
 	#define AMX_INCLUDING_FAILED
 #endif
 
-#tryinclude "..\amx\frame_info"
-#tryinclude <amx_assembly\frame_info>
-#tryinclude "..\amx_assembly\frame_info"
-#tryinclude "..\..\amx_assembly\frame_info"
+#tryinclude "../amx/frame_info"
+#tryinclude <amx_assembly/frame_info>
+#tryinclude "../amx_assembly/frame_info"
+#tryinclude "../../amx_assembly/frame_info"
 #tryinclude "dynamic_call"
 #tryinclude <dynamic_call>
 #if !defined FRAME_INFO_INC
 	#define AMX_INCLUDING_FAILED
 #endif
 
-#tryinclude "..\amx\heap_alloc"
-#tryinclude <amx_assembly\heap_alloc>
-#tryinclude "..\amx_assembly\heap_alloc"
-#tryinclude "..\..\amx_assembly\heap_alloc"
+#tryinclude "../amx/heap_alloc"
+#tryinclude <amx_assembly/heap_alloc>
+#tryinclude "../amx_assembly/heap_alloc"
+#tryinclude "../../amx_assembly/heap_alloc"
 #tryinclude "heap_alloc"
 #tryinclude <heap_alloc>
 #if !defined HEAP_ALLOC_INC
 	#define AMX_INCLUDING_FAILED
 #endif
 
-#tryinclude "..\amx\opcode"
-#tryinclude <amx_assembly\opcode>
-#tryinclude "..\amx_assembly\opcode"
-#tryinclude "..\..\amx_assembly\opcode"
+#tryinclude "../amx/opcode"
+#tryinclude <amx_assembly/opcode>
+#tryinclude "../amx_assembly/opcode"
+#tryinclude "../../amx_assembly/opcode"
 #tryinclude "opcode"
 #tryinclude <opcode>
 #if !defined OPCODE_INC
 	#define AMX_INCLUDING_FAILED
 #endif
 
-#tryinclude "..\amx\os"
-#tryinclude <amx_assembly\os>
-#tryinclude "..\amx_assembly\os"
-#tryinclude "..\..\amx_assembly\os"
+#tryinclude "../amx/os"
+#tryinclude <amx_assembly/os>
+#tryinclude "../amx_assembly/os"
+#tryinclude "../../amx_assembly/os"
 #tryinclude "os"
 #tryinclude <os>
 #if !defined OS_INC
 	#define AMX_INCLUDING_FAILED
 #endif
 
-#tryinclude "..\amx\phys_memory"
-#tryinclude <amx_assembly\phys_memory>
-#tryinclude "..\amx_assembly\phys_memory"
-#tryinclude "..\..\amx_assembly\phys_memory"
+#tryinclude "../amx/phys_memory"
+#tryinclude <amx_assembly/phys_memory>
+#tryinclude "../amx_assembly/phys_memory"
+#tryinclude "../../amx_assembly/phys_memory"
 #tryinclude "phys_memory"
 #tryinclude <phys_memory>
 #if !defined PHYS_MEMORY_INC
 	#define AMX_INCLUDING_FAILED
 #endif
 
-#tryinclude "..\amx\profiler"
-#tryinclude <amx_assembly\profiler>
-#tryinclude "..\amx_assembly\profiler"
-#tryinclude "..\..\amx_assembly\profiler"
+#tryinclude "../amx/profiler"
+#tryinclude <amx_assembly/profiler>
+#tryinclude "../amx_assembly/profiler"
+#tryinclude "../../amx_assembly/profiler"
 #tryinclude "profiler"
 #tryinclude <profiler>
 #if !defined PROFILER_INC
@@ -264,20 +264,20 @@ Optional plugins:
 //	#define AMX_INCLUDING_FAILED
 //#endif
 
-#tryinclude "..\amx\stack_dump"
-#tryinclude <amx_assembly\stack_dump>
-#tryinclude "..\amx_assembly\stack_dump"
-#tryinclude "..\..\amx_assembly\stack_dump"
+#tryinclude "../amx/stack_dump"
+#tryinclude <amx_assembly/stack_dump>
+#tryinclude "../amx_assembly/stack_dump"
+#tryinclude "../../amx_assembly/stack_dump"
 #tryinclude "stack_dump"
 #tryinclude <stack_dump>
 #if !defined STACK_DUMP_INC
 	#define AMX_INCLUDING_FAILED
 #endif
 
-#tryinclude "..\amx\stack_trace"
-#tryinclude <amx_assembly\stack_trace>
-#tryinclude "..\amx_assembly\stack_trace"
-#tryinclude "..\..\amx_assembly\stack_trace"
+#tryinclude "../amx/stack_trace"
+#tryinclude <amx_assembly/stack_trace>
+#tryinclude "../amx_assembly/stack_trace"
+#tryinclude "../../amx_assembly/stack_trace"
 #tryinclude "stack_trace"
 #tryinclude <stack_trace>
 #if !defined STACK_TRACE_INC

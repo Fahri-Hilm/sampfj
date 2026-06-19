@@ -122,9 +122,9 @@ Optional plugins:
 
 // Avoid an error with `forward OnRuntimeError(code, &bool:suppress);` in here after already ALS
 // hooking it (#266).
-#tryinclude "..\..\crashdetect"
+#tryinclude "../../crashdetect"
 #tryinclude <crashdetect>
-#tryinclude "..\..\..\crashdetect"
+#tryinclude "../../../crashdetect"
 #tryinclude "crashdetect"
 
 // These three includes are just defines.  They declare no code at all, only
@@ -265,7 +265,7 @@ native _YSI_ConstCpy(const dst[], const src[], index, numbytes, maxlength) = mem
 
 // These are conditional, and use most of the preceeding code.
 #if defined YSI_TESTS
-	#include "..\y_testing"
+	#include "../y_testing"
 #endif
 
 #if defined YSI_YES_MODE_CACHE

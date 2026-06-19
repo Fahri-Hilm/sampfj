@@ -107,14 +107,14 @@ Optional plugins:
 */
 
 #include <a_samp>
-#include "..\YSI_Storage\y_amx"
-#include "..\YSI_Coding\y_hooks"
-#include "..\YSI_Core\y_utils"
+#include "../YSI_Storage/y_amx"
+#include "../YSI_Coding/y_hooks"
+#include "../YSI_Core/y_utils"
 
-#tryinclude "..\amx\windows\import_table"
-#tryinclude <amx_assembly\windows\import_table>
-#tryinclude "..\amx_assembly\windows\import_table"
-#tryinclude "..\..\amx_assembly\windows\import_table"
+#tryinclude "../amx/windows/import_table"
+#tryinclude <amx_assembly/windows/import_table>
+#tryinclude "../amx_assembly/windows/import_table"
+#tryinclude "../../amx_assembly/windows/import_table"
 
 forward WriteMem(addr, value);
 

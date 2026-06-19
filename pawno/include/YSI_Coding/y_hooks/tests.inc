@@ -422,8 +422,8 @@ public y_hooks_MyFunc1(a, b)
 	g_y_hooksVar += a + b;
 }
 
-#tryinclude "..\YSI_Internal\y_unique"
-#tryinclude "..\..\YSI_Internal\y_unique"
+#tryinclude "../YSI_Internal/y_unique"
+#tryinclude "../../YSI_Internal/y_unique"
 
 hook y_hooks_MyFunc1(a, b)
 {
@@ -431,8 +431,8 @@ hook y_hooks_MyFunc1(a, b)
 	g_y_hooksVar += a + b;
 }
 
-#tryinclude "..\YSI_Internal\y_unique"
-#tryinclude "..\..\YSI_Internal\y_unique"
+#tryinclude "../YSI_Internal/y_unique"
+#tryinclude "../../YSI_Internal/y_unique"
 
 hook y_hooks_MyFunc1(a, b)
 {
@@ -440,8 +440,8 @@ hook y_hooks_MyFunc1(a, b)
 	g_y_hooksVar += a + b;
 }
 
-#tryinclude "..\YSI_Internal\y_unique"
-#tryinclude "..\..\YSI_Internal\y_unique"
+#tryinclude "../YSI_Internal/y_unique"
+#tryinclude "../../YSI_Internal/y_unique"
 
 hook y_hooks_MyFunc1(a, b)
 {
@@ -449,8 +449,8 @@ hook y_hooks_MyFunc1(a, b)
 	g_y_hooksVar += a + b;
 }
 
-#tryinclude "..\YSI_Internal\y_unique"
-#tryinclude "..\..\YSI_Internal\y_unique"
+#tryinclude "../YSI_Internal/y_unique"
+#tryinclude "../../YSI_Internal/y_unique"
 
 hook y_hooks_MyFunc1(a, b)
 {
@@ -458,8 +458,8 @@ hook y_hooks_MyFunc1(a, b)
 	g_y_hooksVar += a + b;
 }
 
-#tryinclude "..\YSI_Internal\y_unique"
-#tryinclude "..\..\YSI_Internal\y_unique"
+#tryinclude "../YSI_Internal/y_unique"
+#tryinclude "../../YSI_Internal/y_unique"
 
 hook y_hooks_MyFunc1(a, b)
 {
@@ -628,8 +628,8 @@ hook OnTestNumArgs2(a, b, c, f)
 	ASSERT(numargs() == 4);
 }
 
-#tryinclude "..\YSI_Internal\y_unique"
-#tryinclude "..\..\YSI_Internal\y_unique"
+#tryinclude "../YSI_Internal/y_unique"
+#tryinclude "../../YSI_Internal/y_unique"
 
 hook OnTestNumArgs2(a, b, c, f)
 {

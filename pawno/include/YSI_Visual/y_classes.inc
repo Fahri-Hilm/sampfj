@@ -158,7 +158,7 @@ Optional plugins:
 	Me - sscanf2, fixes2, Whirlpool.
 */
 
-#include "..\YSI_Internal\y_compilerdata"
+#include "../YSI_Internal/y_compilerdata"
 
 stock _YSI_HAS_y_classes(_do_not_call_me_ever_, _like_never_)
 {
@@ -167,7 +167,7 @@ stock _YSI_HAS_y_classes(_do_not_call_me_ever_, _like_never_)
 	return 0;
 }
 
-#include "..\YSI_Internal\y_version"
+#include "../YSI_Internal/y_version"
 
 #if !defined MAX_CLASSES
 	#define MAX_CLASSES                 (512)
@@ -185,28 +185,28 @@ stock _YSI_HAS_y_classes(_do_not_call_me_ever_, _like_never_)
 
 #define MASTER 61
 #define YSIM_U_DISABLE
-#include "..\YSI_Core\y_master"
+#include "../YSI_Core/y_master"
 
-#include "..\YSI_Data\y_bit"
-#include "..\YSI_Core\y_debug"
-#include "..\YSI_Data\y_iterate"
-#include "..\YSI_Data\y_playerarray"
-#include "..\YSI_Data\y_iterate"
-#include "..\YSI_Internal\y_natives"
+#include "../YSI_Data/y_bit"
+#include "../YSI_Core/y_debug"
+#include "../YSI_Data/y_iterate"
+#include "../YSI_Data/y_playerarray"
+#include "../YSI_Data/y_iterate"
+#include "../YSI_Internal/y_natives"
 
 
 #define _GROUP_MAKE_NAME<%0...%1> %0Class%1
 #define _GROUP_MAKE_LIMIT         MAX_CLASSES
-#include "..\YSI_Players\y_groups\_funcs"
+#include "../YSI_Players/y_groups/_funcs"
 //#include "..\YSI_Players\y_groups\y_classes"
 
-#include "..\YSI_Coding\y_hooks"
+#include "../YSI_Coding/y_hooks"
 #include "y_classes/classcontrol"
-#include "..\YSI_Coding\y_hooks"
+#include "../YSI_Coding/y_hooks"
 #include "y_classes/multiclass"
 
 #if defined YSI_TESTS
-	#include "..\YSI_Core\y_testing"
+	#include "../YSI_Core/y_testing"
 	#include "y_classes/tests"
 #endif
 
@@ -214,5 +214,5 @@ stock _YSI_HAS_y_classes(_do_not_call_me_ever_, _like_never_)
 #undef _GROUP_MAKE_LIMIT
 #undef _GROUP_MAKE_NAME
 
-#include "..\YSI_Core\y_master"
+#include "../YSI_Core/y_master"
 

@@ -89,21 +89,21 @@ Optional plugins:
 
 // y_dialog - does stuff with dialogs.
 
-#include "..\YSI_Internal\y_version"
-#include "..\YSI_Data\y_bit"
+#include "../YSI_Internal/y_version"
+#include "../YSI_Data/y_bit"
 
-#include "..\YSI_Coding\y_remote"
+#include "../YSI_Coding/y_remote"
 
-#include "..\YSI_Coding\y_inline"
-#include "..\YSI_Data\y_iterate"
+#include "../YSI_Coding/y_inline"
+#include "../YSI_Data/y_iterate"
 
-#include "..\YSI_Coding\y_hooks"
+#include "../YSI_Coding/y_hooks"
 
-#include "..\YSI_Storage\y_amx"
+#include "../YSI_Storage/y_amx"
 
 #define YSIM_U_DISABLE
 #define MASTER 54
-#include "..\YSI_Core\y_master"
+#include "../YSI_Core/y_master"
 
 #if !defined MAX_DIALOGS
 	#define MAX_DIALOGS (2000)
@@ -400,5 +400,5 @@ public DialogSetToNone(playerid) {
 	ShowPlayerDialog(playerid, -1, 0, NULL, NULL, NULL, NULL);
 }*/
 
-#include "..\YSI_Core\y_master"
+#include "../YSI_Core/y_master"
 

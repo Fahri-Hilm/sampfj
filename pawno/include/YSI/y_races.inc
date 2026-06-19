@@ -73,4 +73,4 @@ Optional plugins:
 	#undef _inc_y_races
 #endif
 
-#include "..\YSI_Visual\y_races"
+#include "../YSI_Visual/y_races"

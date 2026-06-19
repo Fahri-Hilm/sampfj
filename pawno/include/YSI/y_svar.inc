@@ -73,4 +73,4 @@ Optional plugins:
 	#undef _inc_y_svar
 #endif
 
-#include "..\YSI_Storage\y_svar"
+#include "../YSI_Storage/y_svar"

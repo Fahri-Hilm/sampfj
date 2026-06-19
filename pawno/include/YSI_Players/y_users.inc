@@ -102,26 +102,26 @@ forward OnPlayerSaved(playerid, uid);
 //	#define HAS_USER_CALLBACKS
 //#endif
 
-#include "..\YSI_Internal\y_version"
+#include "../YSI_Internal/y_version"
 
-#include "..\YSI_Players\y_text"
+#include "../YSI_Players/y_text"
 
-#include "..\YSI_Coding\y_remote"
-#include "..\YSI_Core\y_debug"
-#include "..\YSI_Storage\y_ini"
-#include "..\YSI_Core\y_utils"
-#include "..\YSI_Coding\y_timers"
+#include "../YSI_Coding/y_remote"
+#include "../YSI_Core/y_debug"
+#include "../YSI_Storage/y_ini"
+#include "../YSI_Core/y_utils"
+#include "../YSI_Coding/y_timers"
 
 #define YSIM_U_DISABLE
 #define MASTER 55
-#include "..\YSI_Core\y_master"
+#include "../YSI_Core/y_master"
 
 #define MAX_INDEX_LENGTH                8
 
-#include "..\YSI_Internal\y_plugins"
-#include "..\YSI_Internal\y_natives"
+#include "../YSI_Internal/y_plugins"
+#include "../YSI_Internal/y_natives"
 
-#include "..\YSI_Coding\y_hooks"
+#include "../YSI_Coding/y_hooks"
 
 #if defined PP_ADLER32
 	//#define MAX_PASSWORD_LENGTH             11
@@ -208,8 +208,8 @@ foreign Player_ChangeLanguage(playerid, string:code[]);
 	
 	// I know it is a bit odd that this should need y_ini for database access, but
 	// there is a very good reason (loading passwords).
-	#include "..\YSI_Storage\y_ini"
-	#include "..\YSI_Data\y_iterate"
+	#include "../YSI_Storage/y_ini"
+	#include "../YSI_Data/y_iterate"
 	
 	#include "y_users/dan10"
 #elseif defined USERS_USE_SQLITE
@@ -218,9 +218,9 @@ foreign Player_ChangeLanguage(playerid, string:code[]);
 	#include "y_users/ini"
 #endif
 #if defined YSI_TESTS
-	#include "..\YSI_Core\y_testing"
+	#include "../YSI_Core/y_testing"
 	#include "y_users/tests"
 #endif
 
-#include "..\YSI_Core\y_master"
+#include "../YSI_Core/y_master"
 

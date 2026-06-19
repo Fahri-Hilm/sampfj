@@ -73,4 +73,4 @@ Optional plugins:
 	#undef _inc_y_jaggedarray
 #endif
 
-#include "..\YSI_Data\y_jaggedarray"
+#include "../YSI_Data/y_jaggedarray"

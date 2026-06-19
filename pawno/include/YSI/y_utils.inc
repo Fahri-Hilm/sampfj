@@ -73,4 +73,4 @@ Optional plugins:
 	#undef _inc_y_utils
 #endif
 
-#include "..\YSI_Core\y_utils"
+#include "../YSI_Core/y_utils"

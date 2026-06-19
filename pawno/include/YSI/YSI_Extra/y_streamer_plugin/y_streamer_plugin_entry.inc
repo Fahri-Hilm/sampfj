@@ -75,9 +75,9 @@ Optional plugins:
 	Me - sscanf2, fixes2, Whirlpool.
 */
 
-#include "..\..\YSI_Data\y_sparsearray"
-#include "..\..\YSI_Coding\y_inline"
-#include "..\..\YSI_Coding\y_hooks"
+#include "../../YSI_Data/y_sparsearray"
+#include "../../YSI_Coding/y_inline"
+#include "../../YSI_Coding/y_hooks"
 
 #if defined STREAMER_ENABLE_TAGS
 	#define CB_STREAMER_TAG_OBJECT DynamicObject
