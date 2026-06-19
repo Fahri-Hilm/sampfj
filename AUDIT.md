@@ -28,12 +28,16 @@ Server target Linux (VPS), compiler pawncc Linux **case-sensitive** & **tidak me
 
 | # | Masalah | Lokasi | Prio | Status |
 |:--|:--------|:-------|:----:|:------:|
-| 2.1 | **Backslash path di `#include`** — `JOB\...`, `CMD\...` | `GM.pwn` (24 baris), `JOB/SINGKONG.pwn` | 🔴 | ⬜ |
-| 2.2 | **Backslash path di library include** — `YSI_Data\y_iterate`, dll | `pawno/include/` (**101 file**: progress2, foreach, YSI, SIF, ...) | 🔴 | ⬜ |
-| 2.3 | Error compile pertama terkonfirmasi | `progress2.inc:13` → `cannot read file "YSI_Data\y_iterate"` | 🔴 | ⬜ |
+| 2.1 | **Backslash path di `#include`** — `JOB\...`, `CMD\...` | `GM.pwn` (24 baris), `JOB/SINGKONG.pwn` | 🔴 | ✅ |
+| 2.2 | **Backslash path di library include** — `YSI_Data\y_iterate`, dll | `pawno/include/` (101 `#include` + 67 `#tryinclude`) | 🔴 | ✅ |
+| 2.3 | Error compile pertama terkonfirmasi | `progress2.inc:13` → `cannot read file "YSI_Data\y_iterate"` | 🔴 | ✅ |
+| 2.4 | YSI salah deteksi versi compiler (`__Pawn`) | compiler lama lapor `10`, resmi lapor `0x030A` | 🔴 | ✅ |
+| 2.5 | Self-init variabel `health` | `GM.pwn:5786` | 🔴 | ✅ |
 
-**Rencana:** ganti seluruh `\` → `/` pada baris `#include` (otomatis, aman — tidak menyentuh string lain).
-Setelah itu compile ulang dan tangani error berikutnya satu per satu.
+**✅ SELESAI** — `GM.amx` berhasil di-compile di Linux (pawncc 3.10.10 resmi, **0 error**, 9.97 MB).
+- Compiler resmi disalin ke `tools/pawncc/` (in-project, `__Pawn=0x030A` benar untuk YSI).
+- Build script `build.sh` dibuat. Jalankan: `bash build.sh`.
+- Sisa 5993 warning bersifat kosmetik (239 = string literal, 214 = symbol unused) — tidak memengaruhi runtime.
 
 ---
 
