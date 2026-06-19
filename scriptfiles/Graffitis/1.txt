@@ -1,0 +1,8 @@
+graffcreator=Z
+graffname={00CED1}Janny bau
+Xpos=2309.901855
+Ypos=-1252.065795
+Zpos=23.986391
+XYpos=0.000000
+YYpos=0.000000
+ZYpos=0.000000
